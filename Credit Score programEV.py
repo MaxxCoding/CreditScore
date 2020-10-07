@@ -1,6 +1,8 @@
+#This Program takes the credit score from an individual according to equifax.com and tells them whether their credit is in the poor,fair,good, very good or excellent range
 name=input("Enter your name:")
 #Get Credit Score from a user
 credit_score=int(input("Enter your credit score:"))
+#Use of a validation loop to ensure that the user enters a number that within an actual range of credit scores
 while credit_score<0 or credit_score>850:
 	print("Error your credit score cannot be negative")
 	print("or be greater than 850")
